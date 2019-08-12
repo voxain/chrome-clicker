@@ -1,0 +1,372 @@
+body,html{
+				font-family:Segoe UI Light,Ubuntu Light,Loma,Arial;
+				color:white;
+				cursor:url(joint.png),default;
+			}
+			#gift:hover{
+				cursor:pointer;
+				background:gray;
+			}
+			#giftarea{
+				position:fixed;
+				display:none;
+				width:100%;
+				animation:slideIn 0.3s ease-out;
+				height:100%;
+				left:0px;
+				top:0px;
+				background:rgba(0,0,0,0.6);
+			}
+			#gift-headline{
+				height:50px;
+				width:100%;
+				font-size:40px;
+				position:relative;
+				top:0px;
+				left:0px;
+				background:#666;
+			}
+			#giftunlocked{
+				display:none;
+			}
+			#X{
+				width:100px;
+				height:100px;
+				font-size:80px;
+				position:fixed;
+				top:0px;
+				cursor:pointer;
+				transition:0.3s ease;
+				right:0px;
+			}
+			#X:hover{
+				background:red;
+			}
+			#free-gift{
+				width:60%;
+				height:300px;
+				border-radius:10px;
+				background:rgba(255,255,255,0.3);
+				
+			}
+			@keyframes slideIn{
+				0%{left:-100%}
+				100%{left:0%}
+			}
+			#gift-inner{
+				position:relative;
+				background:#222;
+				height:100%;
+				width:30%;
+				top:0px;
+			}
+			#ultra{transition:0.05s ease;
+				position:fixed;
+				top:0px;
+				left:0px;
+				margin:0px;
+				width:100%;
+				height:100%;}
+			#background{
+				width:300%;
+				background:url("3d_small-thumb.png");
+				height:300%;
+				position:fixed;
+				animation:bg 10s ease infinite;
+				top:-100%;
+				left:-100%;
+			}
+			.epilepsie:hover{
+				animation:gocrazy 0.3s ease infinite;
+			}
+			@keyframes bg{
+				0%{background:url("3d_small-thumb.png") 0px 0px;transform:rotateZ(0deg) scale3d(1,1,1)}
+				20%{background:url("3d_small-thumbn.png") 20px 30px;transform:rotateZ(-30deg) scale3d(2,2,2)}
+				40%{background:url("3d_small-thumbn.png") -10px 50px}
+				60%{background:url("3d_small-thumb.png") 10px -30px;transform:rotateZ(-20deg) scale3d(0.6,0.6,0)}
+				80%{background:url("3d_small-thumb.png") -20px -10px;transform:rotateZ(50deg) scale3d(3,3,3)}
+				100%{background:url("3d_small-thumb.png") 0px 0px;transform:rotateZ(0deg) scale3d(1,1,1)}
+			}
+			@keyframes mlg{
+				0%{background:url("3d_small-thumbn.png") 100px -100px}
+				20%{background:url("9.png") 20px 30px}
+				40%{background:url("9.png") -1000px -300px}
+				60%{background:url("9.png") 200px 200px}
+				80%{background:url("9.png") -20px -10px}
+				90%{background:url("3d_small-thumbn.png") 20px 10px}
+				100%{background:url("3d_small-thumb.png") 0px 0px}
+			}
+			#dannec{
+				position:fixed;
+				bottom:0px;
+				height:40%;
+				display:none;
+				left:10%;
+			}
+			#illu{
+				position:fixed;
+				right:-10px;
+				width:400px;
+				top:200px;
+				animation:ILLUMINATI 0.2s linear infinite;
+			}
+			@keyframes ILLUMINATI{
+				0%{transform:rotate(0deg)}
+				100%{transform:rotate(360deg)}
+			}
+			@keyframes ultramlg{
+				25%{background:url("17.png")}
+				75%{background:url("9.png")}
+			}
+			@keyframes ultramegacrazy{
+				0%{transform:scale3d(1,1,1)}
+				50%{transform:scale3d(2.5,2.5,2.5)}
+				100%{transform:scale3d(1,1,1)}
+			}
+			@keyframes crazy{
+				0%{transform:rotate(0deg) scale3d(3.3,3.3,3.3)}
+				50%{transform:rotate(180deg) scale3d(1,1,1)}
+				100%{transform:rotate(360deg) scale3d(3.3,3.3,3.3)}
+			}
+			#wtfBoom{
+				position:fixed;
+				width:100%;
+				height:100%;
+				top:0px;
+				left:0px;
+				z-index:999;
+				animation:gocrazy 0.2s ease infinite;
+				display:none;
+			}
+			@keyframes gocrazy2{
+				0%{color:rgba(0,0,0,0)}
+				25%{color:rgba(255,0,0,0.8)}
+				50%{color:rgba(0,255,0,0.8)}
+				75%{color:rgba(0,0,255,0.8)}
+				100%{color:rgba(255,255,255,0)}
+			}
+			@keyframes gocrazy{
+				0%{background:rgba(0,0,0,0)}
+				25%{background:rgba(255,0,0,0.8)}
+				50%{background:rgba(0,255,0,0.8)}
+				75%{background:rgba(0,0,255,0.8)}
+				100%{background:rgba(255,255,255,0)}
+			}
+			.heading{
+				position:fixed;
+				width:60%;
+				color:white;
+				background:rgba(0,0,0,0.7);
+				transition:1s ease;
+				height:60px;
+				top:0px;
+				left:20%;
+				font-size:40px;
+			}
+			.Chrome{
+				height:256px;
+				position:relative;
+				top:140px;
+				transition:0.3s ease-out;
+				transform:scale3d(25,25,15) rotate(720deg);
+				z-index:6;
+			}
+			.side{
+				position:fixed;
+				height:100%;
+				width:20%;
+				top:0px;
+				transition:0.6s ease;
+				background:rgba(0,0,0,0.7);
+			}
+			.side-left{
+				left:0px;
+			}
+			.side-right{
+				right:0px;
+			}
+			button{
+				font-family:Segoe UI Light,Ubuntu Light,Loma,Arial;
+			}
+			.upgrade-head{
+				width:100%;
+				position:relative;
+				height:60px;
+				color:white;
+				font-size:40px;
+			}
+			.upgrade{
+				width:100%;
+				height:100px;
+				padding:0px;
+				background:rgba(0,0,0,0.7);
+				border:1px solid white;
+				color:white;
+				transition:0.2s ease;
+			} 
+			.upgrade:hover{
+				background:rgba(100,100,100,0.7);
+				cursor:pointer;
+			}
+			.button-heading{
+				font-size:30px;
+			}
+			.button-chrome{
+				height:15px;
+			}
+			.button-price{
+				font-size:15px;
+			}
+			.footer{
+				width:60%;
+				height:30px;
+				position:fixed;
+				left:20%;
+				color:white;
+				bottom:0px;
+				transition:1s ease;
+				font-size:20px;
+				background:rgba(0,0,0,0.7)
+			}
+			.hitmarker{
+				z-index:999;
+				position:fixed;
+				transition:0.2s ease;
+				animation:ultramegacrazy 0.2s ease infinite;
+			}
+			#HITMARKER{display:none;
+				cursor:none;
+				animation:none;}
+			#mlgtext{
+				z-index:99;
+				width:60%;
+				position: fixed;
+				animation:text1 1s ease infinite;
+				transition:3s ease;
+				display:none;
+				left:20%;
+				bottom:0px;
+			}
+			#faze{
+				position:fixed;
+				height:100%;
+				width:100%;
+				leFT:0px;
+				top:0px;
+				display:none;
+				animation:booz 1.5s ease;
+			}
+			@keyframes text1{
+				0%{transform:rotate(-10deg) scale3d(0.7,0.7,0.7)}
+				10%{transform:rotate(10deg)}
+				20%{transform:rotate(-10deg)}
+				30%{transform:rotate(10deg)}
+				40%{transform:rotate(-10deg)}
+				50%{transform:rotate(10deg) scale3d(1.3,1.3,1.3)}
+				60%{transform:rotate(-10deg)}
+				70%{transform:rotate(10deg)}
+				80%{transform:rotate(-10deg)}
+				90%{transform:rotate(10deg)}
+				100%{transform:rotate(-10deg) scale3d(0.7,0.7,0.7)}
+			}
+			@keyframes ultracrazy{
+				0%{transform:rotate(-40deg) scale3d(0.7,0.7,0.7) skewX(0deg) skewY(0deg)}
+				40%{transform:rotate(40deg) skewX(40deg) skewY(-40deg)}
+				20%{transform:rotate(-40deg) skewX(-40deg) skewY(0deg)}
+				30%{transform:rotate(40deg) skewX(40deg) skewY(-40deg)}
+				40%{transform:rotate(-40deg) skewX(-40deg) skewY(40deg)}
+				50%{transform:rotate(40deg) scale3d(1.3,1.3,1.3) skewX(40deg) skewY(-40deg)}
+				60%{transform:rotate(-40deg) skewX(-40deg) skewY(40deg)}
+				70%{transform:rotate(40deg) skewX(40deg) skewY(-40deg)}
+				80%{transform:rotate(-40deg) skewX(-40deg) skewY(40deg)}
+				90%{transform:rotate(40deg) skewX(40deg) skewY(-40deg)}
+				400%{transform:rotate(-40deg) scale3d(0.7,0.7,0.7) skewX(0deg) skewY(0deg)}
+			}
+			#bonus{
+				background:#4d8cf5;
+				color:white;
+				position:fixed;
+				width:100%;
+				height:100%;
+				top:0px;
+				left:0px;
+				z-index:100;
+				transition:0.5s ease;
+			}
+			@keyframes timem{
+				0%{transform:scale3d(0,0,0)}
+				100%{transform:scale3d(1,1,1)}
+			}
+			::selection { background:none; }
+			.mLg{
+				z-index:99;
+				display:none;
+				z-index:999999999999999999999999999999;
+				position:fixed;
+				animation:ILLUMINATI 0.2s linear infinite;
+			}
+			#booz{
+				z-index:999;
+				animation:booz 3s ease;
+				position:fixed;
+				width:100%;
+				height:100%;
+				left:0px;
+				top:0px;
+				background:none;
+				display:none;
+			}
+			@keyframes booz{
+				0%{background:rgba(0,0,0,0)}
+				50%{background:rgba(0,0,0,1)}
+				51%{background:rgba(255,255,255,1)}
+				52%{background:rgba(255,0,0,0.8)}
+				53%{background:rgba(0,255,0,0.8)}
+				54%{background:rgba(0,0,255,0.8)}
+				53%{background:rgba(255,0,0,0.8)}
+				54%{background:rgba(0,255,0,0.8)}
+				55%{background:rgba(0,0,255,0.8)}
+				56%{background:rgba(255,0,0,0.8)}
+				57%{background:rgba(0,255,0,0.8)}
+				58%{background:rgba(0,0,255,0.8)}
+				59%{background:rgba(255,0,0,0.8)}
+				60%{background:rgba(0,255,0,0.8)}
+				61%{background:rgba(0,0,255,0.8)}
+				62%{background:rgba(255,0,0,0.8)}
+				63%{background:rgba(0,255,0,0.8)}
+				64%{background:rgba(0,0,255,0.8)}
+				65%{background:rgba(255,0,0,0.8)}
+				66%{background:rgba(0,255,0,0.8)}
+				67%{background:rgba(0,0,255,0.8)}
+				68%{background:rgba(255,0,0,0.8)}
+				69%{background:rgba(0,255,0,0.8)}
+				70%{background:rgba(0,0,255,0.8)}
+				71%{background:rgba(255,255,255,1);opacity:1}
+				100%{background:rgba(255,255,255,0);opacity:0}
+			}
+			
+			.alert-bg{
+				position:fixed;
+				z-index:998.5;
+				width:100%;
+				height:100%;
+				background:rgba(0,0,0,0.7);
+				left:0px;
+				top:0px;
+			}
+			.alert-container{
+				width:40%;
+				position:fixed;
+				background:rgba(190,190,190,1);
+				height:50%;
+				left:30%;
+				top:25%;
+			}
+			.alert-title{
+				width:98%;
+				margin:1%;
+				height:40px;
+				font-family:Arial Black;
+				font-size:38px;
+				background:rgba(40,40,40,0);
+			}

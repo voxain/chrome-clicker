@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<style>
+			button:focus{outline:none}
+		</style>
+		<meta charset="utf-8">
+		<title>Chromium Clicker</title>
+		<link rel="shortcut icon" href="Google.ico" />
+		<link rel="stylesheet" href="button.css" />
+		<link rel="stylesheet" href="label.min.css" />
+		<link rel="stylesheet" href="statistic.min.css" />
+		<audio id="HITMARKER1" src="HITMARKER.mp3"></audio><audio id="HITMARKER2" src="HITMARKER.mp3"></audio><audio id="HITMARKER3" src="HITMARKER.mp3"></audio><audio id="HITMARKER4" src="HITMARKER.mp3"></audio><audio id="HITMARKER5" src="HITMARKER.mp3"></audio>
+		<audio id="HITMARKER6" src="HITMARKER.mp3"></audio><audio id="HITMARKER7" src="HITMARKER.mp3"></audio><audio id="HITMARKER8" src="HITMARKER.mp3"></audio><audio id="HITMARKER9" src="HITMARKER.mp3"></audio><audio id="HITMARKER10" src="HITMARKER.mp3"></audio>
+		<audio id="HITMARKER11" src="HITMARKER.mp3"></audio><audio id="HITMARKER12" src="HITMARKER.mp3"></audio><audio id="HITMARKER13" src="HITMARKER.mp3"></audio><audio id="HITMARKER14" src="HITMARKER.mp3"></audio><audio id="HITMARKER15" src="HITMARKER.mp3"></audio>
+		<audio id="HITMARKER16" src="HITMARKER.mp3"></audio><audio id="HITMARKER17" src="HITMARKER.mp3"></audio><audio id="HITMARKER18" src="HITMARKER.mp3"></audio><audio id="HITMARKER19" src="HITMARKER.mp3"></audio><audio id="HITMARKER20" src="HITMARKER.mp3"></audio>
+		<audio id="HITMARKER21" src="HITMARKER.mp3"></audio><audio id="HITMARKER22" src="HITMARKER.mp3"></audio><audio id="HITMARKER23" src="HITMARKER.mp3"></audio><audio id="HITMARKER24" src="HITMARKER.mp3"></audio><audio id="HITMARKER25" src="HITMARKER.mp3"></audio>
+		<audio loop id="music1" src="trap3.mp3"></audio>
+		<audio id="lol" autoplay src="warning.mp3"></audio>
+		<audio loop id="musix1" src="dubstep.mp3"></audio>
+		<audio loop id="musix2" src="dubstep2.mp3"></audio>
+		<audio loop id="musix3" src="dubstep3.mp3"></audio>
+		<audio loop id="musix4" src="dubstep2overdosed.mp3"></audio>
+		<audio loop id="musix5" src="dubstep3overdosed.mp3"></audio>
+		<audio loop id="music2" src="trap2.mp3"></audio>
+		<audio loop id="yoloswag" src="yoloswag.mp3"></audio>
+		<audio id="horn" src="AirHornSoundEffect.mp3"></audio>
+		<audio id="ultramusix" src="wtfHax.mp3"></audio>
+		<script src="jquery-1.10.2.js"></script>
+		<script src="script.js"></script>
+		<script src="mlgstcs.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body onload="autoclicker();countTime();" id="bodyz" onmouseup="deletehitMark()">
+		<div id="background"></div>
+		<section id="ultra">
+		<div class="side side-left">
+			<div class="upgrade-head"><center><i>Upgrades</i></center></div>
+			<button class="upgrade" onmousedown="ultraclick()">
+				<span class="button-heading">20s Ultraclick</span><br>
+				
+			<a class="ui black image label">
+				
+				<img src="Google.ico">
+				<span class="button-price">2000</span>
+			</a><br>
+			</button>
+			
+			<button class="upgrade" onmousedown="confirm()">
+				<span class="button-heading">Confirm</span><br>
+				
+			<a class="ui black image label">
+				
+				<img src="Google.ico">
+				<span class="button-price">2000</span>
+			</a><br>
+			</button>
+			<button class="upgrade" onmousedown='chromebig="scale3d(2,2,2)";document.getElementById("Chrome").style.transform=chromebig;document.getElementById("Chrome").style.top="300px";'>
+				<span class="button-heading">Angriffsfläche<br>
+				<a class="ui black image label">
+				
+				<img src="Google.ico">
+				<span class="button-price">20</span>
+			</a><br>
+			</button>
+		</div>
+			<div class="heading" id="heading">
+				<center>
+				<div class="ui horizontal statistic">
+  <div style="color:white" id=points class="value">
+    0
+  </div>
+  <div style="color:white" class="label">
+    Punkte
+  </div>
+</div></center>
+			</div>
+			<center>
+			<div id="lilhelp" class="ui right pointing label red">
+				Klick mich!
+			</div><img src="Google.ico" class="Chrome" id="Chrome" onmousedown="chromeclick()"><br>
+			<section id="bonus">
+				<h1 style="font-size:80px" id="h11">CHROMIUM CLICKER</h1>
+				<div onmousedown="startgame()" class="ui massive animated fade button epilepsie" id="flutschig" tabindex="0">
+					<div class="visible content" style="margin:none;"><img height="85px" src="9.png"></div>
+					<div class="hidden content">
+						click to die<br>m8
+					</div>
+				</div><br>
+			<a class="ui image label" class="epilepsie">
+				<img src="view-2.svg">
+				Epilepsis warning
+			</a><br>
+			<a class="ui image label">
+				<img src="sound-waves.svg">
+				Warning - Loud sounds
+			</a><br><br><br>
+			For the best experience play on Chrome or Chromium, but if u wanna have more FPS, use Firefox.
+			</section>
+			</center>
+			<div class="footer" id=footer>
+				<span id="acps">0</span> Punkte pro Sekunde; 
+				<span id="ppk">0</span> Punkte pro Klick
+				<button class="ui compact mini button" onmousedown="pausegame()">PAUSE</button>
+				<div id="gift" onmousedown='$("#giftarea").css("display","block")' class="ui image label">
+					<img src="gift.png">
+					<span id="gift-time"></span>
+				</div>
+			</div>
+		<div class="side side-right">
+			<div class="upgrade-head"><center><i>Multiplikatoren</i></center></div>
+			<button id="dc-price" class="upgrade" onmousedown="doubleclick()">
+				<span class="button-heading">Double click (Lvl.<span id="dclvl">0</span>)</span><br>
+			<a class="ui black image label">
+				
+				<img src="Google.ico">
+				<span class="button-price" id="price-dc">20</span>
+			</a><br>
+			</button>
+		</div>
+		</section>
+		<audio id="cd" src="CD.wav"></audio>
+		<img src="hitmarker.png" class="hitmarker" id="HITMARKER">
+		<center><span id="mlgtext"></span></center>
+		<img class="mLg" id="dorito" src="4.png">
+		<img class="mLg" id="hash" src="17.png">
+		<img class="mLg" id="illu" src="9.png">
+		<img id="CONFIRMED" src="9.png">
+		<img class="mLg" id="mlg" src="11.png">
+		<img id="faze" src="5.png">
+		<img id="dannec" src="1.gif">
+		<section id="booz"></section>
+		<div id="overlay"></div>
+		<div id="wtfBoom"></div>
+		<section id="giftarea">
+			<span id="X" onmousedown='$("#giftarea").css("display","none")'><center>X</center></span>
+			<center>
+				<section id="gift-inner">
+					<section id="gift-headline">
+						Geschenk
+					</section><br><br><br>
+					<section id="giftunlocked">
+						<section id="free-gift">
+							<img src="Google.ico" style="width:90%"><br>
+							<span id="gift-amount">100.000</span>
+						</section><br><br>
+						<button onmousedown="takeGift()" class="ui massive button inverted blue">
+							Nehmen
+						</button>
+						</section>
+				</section>
+			</center>
+		</section>
+	</body>
+</html>
